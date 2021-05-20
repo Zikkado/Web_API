@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Revolution | Register
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/roboto-font.css">
+    <link rel="stylesheet" type="text/css" href="/fonts/font-awesome-5/css/fontawesome-all.min.css">
+    <link href="/painel/assets/notify/notification.css" rel="stylesheet">
+
+    <link href="/painel/assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="/index/vendor/aos/aos.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="/css/hiddens.css" />
+    <link rel="stylesheet" href="/css/login/style.css" />
+    <link rel="stylesheet" href="/painel/assets/css/dashboard.css" />
+
+    <link rel="shortcut icon" href="/imagens/favicon.ico">
+
+</head>
+
+<body class="main-panel">
+    <div id="particles-js">
+        <div class="formulario" data-aos="zoom-in">
+            <div class="header-box">
+                <h3>Control | Register</h3>
+                <hr>
+            </div>
+            <form action="/register" method="POST">
+                <div class="form-group">
+                    <label for="Input1">Username</label>
+                    <input type="text" class="form-control" id="Input1" name="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="Input2">Email</label>
+                    <input type="email" class="form-control" id="Input2" name="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="Input3">Password</label>
+                    <input type="password" class="form-control" id="Input3" name="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="Input4">Confirm Password</label>
+                    <input type="password" class="form-control" id="Input4" name="c_password" placeholder="Confirm Password">
+                </div>
+                <div class="form-group">
+                    <label for="Input5">Invite Code</label>
+                    <input type="password" class="form-control" id="Input5" name="invite" placeholder="Invite code">
+                </div>
+                <button class="btn-login">Register</button>
+            </form>
+            <h5 for="">Already have an account? <a href="/login">Login</a></h5>
+        </div>
+    </div>
+</body>
+
+
+<script src="/painel/assets/js/core/jquery.min.js"></script>
+<script src="/painel/assets/js/core/popper.min.js"></script>
+<script src="/painel/assets/js/core/bootstrap.min.js"></script>
+<script src="/painel/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<script src="/painel/assets/js/plugins/bootstrap-notify.js"></script>
+<script src="/painel/assets/js/black-dashboard.min.js?v=1.0.0"></script>
+<script src="/index/vendor/venobox/venobox.min.js"></script>
+<script src="/index/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="/index/vendor/superfish/superfish.min.js"></script>
+<script src="/index/vendor/aos/aos.js"></script>
+<script src="/index/js/main.js"></script>
+<script src="/painel/assets/particles/particles.js"></script>
+<script src="/painel/assets/particles/app.js"></script>
+<script src="/painel/assets/notify/notification.js"></script>
+<%- notify %>
+
+</html>

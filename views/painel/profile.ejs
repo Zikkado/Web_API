@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="/imagens/favicon.ico">
+    <title>
+        Dashboard |
+        <%= user %>
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    
+    <link href="/painel/assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/index/vendor/aos/aos.css">
+    <link href="/painel/assets/css/dashboard.css" rel="stylesheet" />
+    <link href="/painel/assets/notify/notification.css" rel="stylesheet" />
+    <link href="/css/hiddens.css" rel="stylesheet" />
+</head>
+
+<body class="">
+    <div class="wrapper">
+
+        <!--Menu-->
+        <div class="sidebar">
+            <div class="sidebar-wrapper" data-aos="fade-up">
+                <div class="logo">
+                    <img src="/imagens/control_150.png" alt="logo" width="170px" style="position: relative; left: 2vh;">
+                </div>
+                <ul class="nav">
+                    <li>
+                        <a href="/dashboard">
+                            <i class="tim-icons icon-chart-pie-36"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/dashboard/reset">
+                            <i class="tim-icons icon-refresh-01"></i>
+                            <p>Reset HWID</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/download">
+                            <i class="tim-icons icon-button-pause"></i>
+                            <p>Freeze Time</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/download">
+                            <i class="tim-icons icon-cloud-download-93"></i>
+                            <p>Download</p>
+                        </a>
+                    </li>
+                    <%if(admin) {%>
+                        <hr style="background: #3D1DC9; margin: 0px 15px 0px 15px;">
+                        <p class="text-center">admin</p>
+                        <li>
+                            <a href="/download">
+                                <i class="tim-icons icon-cloud-upload-94"></i>
+                                <p>Update Cheat</p>
+                            </a>
+                        </li>
+                        <%}%>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="main-panel">
+            <!--============================-->
+            <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent" data-aos="fade-right">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper">
+                        <div class="navbar-toggle d-inline">
+                            <button type="button" class="navbar-toggler">
+                                <span class="navbar-toggler-bar bar1"></span>
+                                <span class="navbar-toggler-bar bar2"></span>
+                                <span class="navbar-toggler-bar bar3"></span>
+                            </button>
+                        </div>
+                        <a class="navbar-brand" href="#">Dashboard</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                        <span class="navbar-toggler-bar navbar-kebab"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="dropdown nav-item">
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                    <div class="photo">
+                                        <img src="/imagens/control_150.png" alt="Profile Photo">
+                                    </div>
+                                    <b class="caret d-none d-lg-block d-xl-block"></b>
+                                    <p class="d-lg-none">
+                                        Log out
+                                    </p>
+                                </a>
+                                <ul class="dropdown-menu dropdown-navbar">
+                                    <li class="nav-link"><a href="/dashboard/profile" class="nav-item dropdown-item">Profile</a></li>
+                                    <li class="dropdown-divider"></li>
+                                    <li class="nav-link"><a href="/logout" class="nav-item dropdown-item">Logout</a></li>
+                                </ul>
+                            </li>
+                            <li class="separator d-lg-none"></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!--============================-->
+
+
+            <div class="content">
+                <div class="row">
+                    <div class="col-lg-10" data-aos="zoom-in">
+                        <div class="card card-chart">
+                            <div class="card-header">
+                                       
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-area">
+                                    <canvas id="chartLinePurple"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/painel/assets/js/core/jquery.min.js"></script>
+        <script src="/painel/assets/js/core/popper.min.js"></script>
+        <script src="/painel/assets/js/core/bootstrap.min.js"></script>
+        <script src="/painel/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+        <script src="/painel/assets/js/plugins/bootstrap-notify.js"></script>
+        <script src="/painel/assets/js/black-dashboard.min.js?v=1.0.0"></script>
+        <script src="/painel/assets/notify/notification.js"></script>
+
+        <script src="/index/vendor/venobox/venobox.min.js"></script>
+        <script src="/index/vendor/owl.carousel/owl.carousel.min.js"></script>
+        <script src="/index/vendor/superfish/superfish.min.js"></script>
+        <script src="/index/vendor/aos/aos.js"></script>
+        <script src="/index/js/main.js"></script>
+
+        <%- notify %>
+        
+        <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+
+</body>
+
+</html>

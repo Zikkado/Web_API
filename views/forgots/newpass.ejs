@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Control Cheats | New Password
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/roboto-font.css">
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome-5/css/fontawesome-all.min.css">
+    <link href="/painel/assets/notify/notification.css" rel="stylesheet">
+
+    <link href="/painel/assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/hiddens.css" />
+    <link rel="stylesheet" href="/css/login/style.css" />
+    <link rel="stylesheet" href="/painel/assets/css/dashboard.css" />
+    <link href="/index/vendor/aos/aos.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/imagens/favicon.ico">
+
+</head>
+
+<body class="main-panel">
+    <div id="particles-js" data-aos="zoom-in">
+        <div class="formulario">
+            <div class="header-box">
+                <h3>Control | Forgot Password</h3>
+                <hr>
+            </div>
+            <form action="/forgotpassword/new" method="POST">
+                <div class="form-group">
+                    <label for="Input1">New Password</label>
+                    <input type="password" class="form-control" name="password" id="Input1" placeholder="New Password">
+                </div>
+                <div class="form-group">
+                    <label for="Input2">Confirm New Password</label>
+                    <input type="password" class="form-control" name="c_password" id="Input2" placeholder="Confirm New Password">
+                    <input type="password" name="uuid" value="<%= uuid %>" hidden>
+                </div>
+                <input type="submit" class="btn-login" value="Send">
+            </form>
+        </div>
+    </div>
+</body>
+
+
+
+
+<script src="/painel/assets/js/core/jquery.min.js"></script>
+<script src="/painel/assets/js/core/popper.min.js"></script>
+<script src="/painel/assets/js/core/bootstrap.min.js"></script>
+<script src="/painel/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<script src="/painel/assets/js/plugins/bootstrap-notify.js"></script>
+<script src="/painel/assets/js/black-dashboard.min.js?v=1.0.0"></script>
+<script src="/index/vendor/venobox/venobox.min.js"></script>
+<script src="/index/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="/index/vendor/superfish/superfish.min.js"></script>
+<script src="/index/vendor/aos/aos.js"></script>
+<script src="/index/js/main.js"></script>
+<script src="/painel/assets/particles/particles.js"></script>
+<script src="/painel/assets/particles/app.js"></script>
+<script src="/painel/assets/notify/notification.js"></script>
+<%- notify %>
+
+</html>

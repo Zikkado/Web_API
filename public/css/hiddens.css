@@ -1,0 +1,8 @@
+*::selection {
+    outline: none;
+    background: transparent;
+}
+
+input::selection {
+    background: #ACCEF7;
+}

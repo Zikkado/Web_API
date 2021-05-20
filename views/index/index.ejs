@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>
+        Revolution | Home
+    </title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link href="/imagens/favicon.ico" rel="icon">
+    <link href="/imagens/favicon.ico" rel="apple-touch-icon">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+        rel="stylesheet">
+
+    <link href="/index/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/index/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="/index/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/index/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/index/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/index/css/style.css" rel="stylesheet">
+    <link href="/css/hiddens.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container" data-aos="fade-left" data-aos-duration="1500">
+
+            <div id="logo" class="pull-left">
+
+                <a href="index.html" class=""><img src="/imagens/control.png" alt="logo" width="140px"
+                        style="position: relative; left: 2vh;"></a>
+            </div>
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="index.html">Home</a></li>
+                    <% if(logued) { %>
+                        <li class="cheat"><a href="/dashboard">Dashboard</a></li>
+                        <% } else { %>
+                            <li class="cheat"><a href="/login">Login</a></li>
+                            <% } %>
+
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+
+    <section id="intro">
+        <div class="intro-container" data-aos="zoom-in" data-aos-delay="100">
+            <h1 class="mb-4 pb-0">A single <span>shot!</span> is all your <br> opponent needs</h1>
+            <a href="#buy-cheat" class="about-btn scrollto">Purchase</a>
+        </div>
+    </section>
+
+
+    <main id="main">
+        <section id="buy-cheat" class="section-with-bg" style="color: white;">
+            <div class="container">
+
+                <div class="section-header" data-aos="fade-up">
+                    <h2>
+                        Buy Cheat</h2>
+                    <p>A single shot is all your opponent needs</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4" data-aos="fade-right" data-aos-delay="500">
+                        <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted text-uppercase text-center">One month</h5>
+                                <h6 class="card-price text-center">$15</h6>
+                                <hr>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Freeze Sub</li>
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Reset HWID</li>
+                                    <li><span class="fa-li"><i class="fa fa-times"></i></span>Lifetime</li>
+                                </ul>
+                                <hr>
+                                <div class="text-center">
+                                    <a type="button" class="btn" href="/buy?t=">Purchase</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="1000">
+                        <div class="card mb-5 mb-lg-0">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted text-uppercase text-center">Three months</h5>
+                                <h6 class="card-price text-center">$40</h6>
+                                <hr>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Freeze Sub</li>
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Reset HWID</li>
+                                    <li><span class="fa-li"><i class="fa fa-times"></i></span>Lifetime</li>
+                                </ul>
+                                <hr>
+                                <div class="text-center">
+                                    <a type="button" class="btn" href="/buy">Purchase</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" data-aos="fade-left" data-aos-delay="500">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted text-uppercase text-center">Beta -Lifetime</h5>
+                                <h6 class="card-price text-center">$100</h6>
+                                <hr>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Freeze Sub</li>
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Reset HWID</li>
+                                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Lifetime</li>
+                                </ul>
+                                <hr>
+                                <div class="text-center">
+                                    <a type="button" class="btn" href="/buy">Purchase</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="text-center text-white" style="background-color: #15151D;">
+
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-dark" href="https://controlcheats.com/">ControlCheats.xyz</a>
+            </div>
+        </footer>
+    </main>
+
+    <script src="/index/vendor/jquery/jquery.min.js"></script>
+    <script src="/index/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/index/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="/index/vendor/php-email-form/validate.js"></script>
+    <script src="/index/vendor/venobox/venobox.min.js"></script>
+    <script src="/index/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="/index/vendor/superfish/superfish.min.js"></script>
+    <script src="/index/vendor/hoverIntent/hoverIntent.js"></script>
+    <script src="/index/vendor/aos/aos.js"></script>
+    <script src="/index/js/main.js"></script>
+
+</body>
+
+</html>
